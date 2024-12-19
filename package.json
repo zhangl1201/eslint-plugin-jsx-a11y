@@ -27,7 +27,7 @@
     "prepublishOnly": "safe-publish-latest && npm run lint && npm run flow && npm run tests-only",
     "pretest": "npm run lint:fix && npm run flow",
     "test": "npm run tests-only",
-    "tests-only": "tape --require=@babel/register '__tests__/**/*.js'",
+    "tests-only": "tape --require=@babel/register __tests__/**/*.js",
     "posttest": "npx npm@'>=10.2' audit --production",
     "pretest:examples": "npm run build",
     "test:examples": "npm run test-example:legacy && npm run test-example:flat-esm && npm run test-example:flat-cjs",
